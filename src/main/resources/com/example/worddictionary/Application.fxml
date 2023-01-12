@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="660.0" style="-fx-background-color: #848c93;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.worddictionary.ApplicationController">
+    <TextField fx:id="input_fld" layoutX="46.0" layoutY="134.0" prefHeight="38.0" prefWidth="430.0" promptText="Enter a Word">
+        <font>
+          <Font size="16.0" />
+        </font>
+    </TextField>
+    <Button fx:id="search_btn" layoutX="501.0" layoutY="134.0" mnemonicParsing="false" onAction="#getMeaning" prefHeight="38.0" prefWidth="90.0" style="-fx-cursor: hand;" text="Search" textFill="#3d3b3b">
+        <font>
+          <Font size="16.0" />
+        </font>
+<!--      <graphic>-->
+<!--         <FontAwesomeIconView glyphName="SEARCH" />-->
+<!--      </graphic>-->
+    </Button>
+    <TextArea fx:id="textarea_fld" layoutX="46.0" layoutY="189.0" prefHeight="200.0" prefWidth="546.0" promptText="Output" wrapText="true">
+        <font>
+          <Font size="16.0" />
+        </font>
+    </TextArea>
+    <Label layoutX="243.0" layoutY="416.0" text="Copyright © Wordpedia">
+        <font>
+          <Font size="14.0" />
+        </font>
+    </Label>
+   <Label layoutX="190.0" layoutY="42.0" text="WordPedia">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="48.0" />
+      </font>
+   </Label>
+</AnchorPane>
